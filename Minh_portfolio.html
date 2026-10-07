@@ -20,24 +20,45 @@
 <body>
 
     <!-- ==================== NAVIGATION ==================== -->
-    <nav>
-        <div class="nb">
+    <nav id="nav">
+        <div class="nb" id="nb">
+            <span class="nb-glow" aria-hidden="true"></span>
+
             <div class="nr">
-                <a href="#home" class="logo">
+                <a href="#home" class="logo mag" aria-label="Back to top">
                     <i>ML</i>
                     <span>MINH</span>
                 </a>
 
-                <div class="links" id="lk"></div>
+                <div class="links" id="lk">
+                    <span class="ind" id="ind" aria-hidden="true"></span>
+                </div>
 
                 <div class="nrr">
-                    <button class="ib" id="th" aria-label="Toggle Theme">☀</button>
-                    <a class="pill" href="#">Resume</a>
-                    <button class="ib" id="burger" aria-label="Menu">☰</button>
+                    <button class="ib th" id="th" aria-label="Toggle theme">
+                        <span class="sun">☀</span>
+                        <span class="moon">☾</span>
+                    </button>
+                    <a class="pill mag" href="documents/HuyMinhLe_Resume.pdf" target="_blank"><span>Resume</span></a>
+                    <button class="ib burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mm">
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
 
-            <div id="mm"></div>
+            <div class="np" aria-hidden="true"><i id="np"></i></div>
+        </div>
+
+        <div id="mm" aria-hidden="true">
+            <div class="mm-links" id="mml"></div>
+            <div class="mm-foot">
+                <span>Huyminh.le@hotmail.com</span>
+                <div>
+                    <a href="https://github.com/minhking22" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/minh-le-22b418262" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -46,7 +67,7 @@
         <div class="wrap hg">
             <div>
                 <h1>
-                    Hi! I'm <span class="gt">MINH</span>
+                    Hi! I'm <span class="gt">Minh</span>
                 </h1>
 
                 <div class="typ">
@@ -61,7 +82,8 @@
                 </p>
 
                 <div class="acts">
-                    <a class="btn" href="#">Download Resume</a>
+                    <a class="btn" href="documents/HuyMinhLe_Resume.pdf" target="_blank" download> Download Resume
+                    </a>
 
                     <div class="so">
                         <a
@@ -130,15 +152,6 @@
                             location: <span class="s">'Montréal, QC'</span>,
                         </span>
                     </div>
-
-                    <div class="ln">
-                        <s>6</s>
-                        <span class="indent">
-                            isCodeBlooded:
-                            <span class="k regular">true</span>
-                        </span>
-                    </div>
-
                     <div class="ln">
                         <s>7</s>
                         <span class="k">};</span>
@@ -197,7 +210,7 @@
 
         <div class="ab">
             <div class="ph">
-                <div>SK</div>
+                <img src="images/profile.jfif" alt="Huy Minh Le">
             </div>
 
             <p>
